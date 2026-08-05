@@ -21,51 +21,107 @@
     </header>
 
     <main>
-        <h2>Fitness Gallery</h2>
+  <section class="gallery-section">
+    <h1>Classes and Fitness Products</h1>
 
-        <div class="gallery">
-            <figure>
-                <img src="images/yoga.svg" alt="Participants practicing yoga">
-                <figcaption>Relaxing yoga sessions</figcaption>
+    <div class="gallery-grid">
 
-                 <button type="button" onclick="addToCart()">
-    Add to Cart
-  </button>
-</figure>
+      <article class="gallery-item">
+        <img src="images/yoga.jpg" alt="Yoga class">
+        <h2>Yoga Class</h2>
+        <p>Improve flexibility, balance, and relaxation.</p>
+        <p class="price">$20.00</p>
 
-            <figure>
-                <img src="images/pilates.svg" alt="Participants practicing Pilates">
-                <figcaption>Strength-building Pilates classes</figcaption>
+        <button
+          type="button"
+          onclick="addToCart('Yoga Class', 20.00)"
+        >
+          Add to Cart
+        </button>
+      </article>
 
-             <button type="button" onclick="addToCart()">
-    Add to Cart
-  </button>
-</figure>
+      <article class="gallery-item">
+        <img src="images/pilates.jpg" alt="Pilates class">
+        <h2>Pilates Class</h2>
+        <p>Strengthen your core and improve posture.</p>
+        <p class="price">$25.00</p>
 
-            <figure>
-                <img src="images/zumba.svg" alt="Participants attending a Zumba class">
-                <figcaption>Energetic Zumba workouts</figcaption>
+        <button
+          type="button"
+          onclick="addToCart('Pilates Class', 25.00)"
+        >
+          Add to Cart
+        </button>
+      </article>
 
-                 <button type="button" onclick="addToCart()">
-    Add to Cart
-  </button>
-</figure>
-        </div>
-<div class="cart-actions">
-  <button type="button" onclick="viewCart()">
-    View Cart
-  </button>
+      <article class="gallery-item">
+        <img src="images/zumba.jpg" alt="Zumba class">
+        <h2>Zumba Class</h2>
+        <p>Enjoy an energetic dance-based workout.</p>
+        <p class="price">$18.00</p>
 
-  <button type="button" onclick="clearCart()">
-    Clear Cart
-  </button>
+        <button
+          type="button"
+          onclick="addToCart('Zumba Class', 18.00)"
+        >
+          Add to Cart
+        </button>
+      </article>
 
-  <button type="button" onclick="processOrder()">
-    Process Order
-  </button>
-</div>
-    </main>
+      <article class="gallery-item">
+        <img src="images/dumbbells.jpg" alt="Fitness dumbbells">
+        <h2>Dumbbell Set</h2>
+        <p>A versatile set for strength-training exercises.</p>
+        <p class="price">$35.00</p>
 
+        <button
+          type="button"
+          onclick="addToCart('Dumbbell Set', 35.00)"
+        >
+          Add to Cart
+        </button>
+      </article>
+
+      <article class="gallery-item">
+        <img src="images/yoga-mat.jpg" alt="Yoga exercise mat">
+        <h2>Yoga Mat</h2>
+        <p>A comfortable mat for yoga and floor exercises.</p>
+        <p class="price">$22.00</p>
+
+        <button
+          type="button"
+          onclick="addToCart('Yoga Mat', 22.00)"
+        >
+          Add to Cart
+        </button>
+      </article>
+
+      <article class="gallery-item">
+        <img
+          src="images/resistance-bands.jpg"
+          alt="Resistance band set"
+        >
+        <h2>Resistance Bands</h2>
+        <p>Portable bands for strength and flexibility training.</p>
+        <p class="price">$15.00</p>
+
+        <button
+          type="button"
+          onclick="addToCart('Resistance Bands', 15.00)"
+        >
+          Add to Cart
+        </button>
+      </article>
+
+    </div>
+
+    <div class="cart-button-container">
+      <button type="button" onclick="viewCart()">
+        View Cart
+      </button>
+    </div>
+  </section>
+</main>
 <footer>
   <h2>Stay Connected</h2>
 
