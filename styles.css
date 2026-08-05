@@ -173,3 +173,14 @@ footer {
         flex-direction: column;
     }
 }
+footer input[type="email"] {
+  width: 280px;
+  max-width: 90%;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+}
+
+footer button {
+  margin-top: 10px;
+}
