@@ -149,33 +149,37 @@ window.addEventListener("click", function(event) {
 // ==========================================
 
 function saveCustomOrder(event) {
-  event.preventDefault();
+    event.preventDefault();
 
-  const customerName = document.getElementById("name").value.trim();
-  const customerEmail = document.getElementById("email").value.trim();
-  const customerPhone = document.getElementById("phone").value.trim();
-  const serviceType = document.getElementById("service").value;
-  const customerMessage = document.getElementById("message").value.trim();
+    const customerName =
+        document.getElementById("name").value.trim();
 
-  const customOrder = {
-    name: customerName,
-    email: customerEmail,
-    phone: customerPhone,
-    service: serviceType,
-    message: customerMessage,
-    submittedAt: new Date().toLocaleString()
-  };
+    const customerEmail =
+        document.getElementById("email").value.trim();
 
-  localStorage.setItem(
-    "abcFitnessCustomOrder",
-    JSON.stringify(customOrder)
-  );
+    const serviceType =
+        document.getElementById("class-interest").value;
 
-  alert("Thank you for your message.");
+    const customerMessage =
+        document.getElementById("message").value.trim();
 
-  document.getElementById("contact-form").reset();
+    const customOrder = {
+        name: customerName,
+        email: customerEmail,
+        service: serviceType,
+        message: customerMessage,
+        submittedAt: new Date().toLocaleString()
+    };
+
+    localStorage.setItem(
+        "abcFitnessCustomOrder",
+        JSON.stringify(customOrder)
+    );
+
+    alert("Thank you for your message.");
+
+    document.getElementById("contact-form").reset();
 }
-
 
 // Display previously saved localStorage information.
 function viewSavedOrder() {
