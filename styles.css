@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7f3;
+    color: #263238;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2f6f5e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #2f6f5e;
+    border-radius: 5px;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.hero {
+    background-color: #dcece5;
+    padding: 50px 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button,
+button {
+    display: inline-block;
+    background-color: #d87d4a;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+    background-color: #b96134;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery figure {
+    margin: 0;
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+figcaption {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.class-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 6px solid #d87d4a;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: white;
+}
+
+caption {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #2f6f5e;
+    color: white;
+}
+
+form {
+    max-width: 650px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
