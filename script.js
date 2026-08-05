@@ -8,6 +8,10 @@ function addToCart() {
   alert("Item added to the cart.");
 }
 
+function viewCart() {
+  alert("View Cart feature coming soon.");
+}
+
 function clearCart() {
   alert("Cart cleared.");
 }
