@@ -130,7 +130,7 @@ function processOrder() {
   }
 
   alert("Thank you for your order.");
-  closeCart();
+  
 }
 
 
