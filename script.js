@@ -109,30 +109,28 @@ function clearCart() {
 
 // Process the order and clear sessionStorage.
 function processOrder() {
-  const cart = getCart();
+    const cart = getCart();
 
-  if (cart.length === 0) {
-    alert("Your cart is empty.");
-    return;
-  }
+    if (cart.length === 0) {
+        alert("Your cart is empty.");
+        return;
+    }
 
-  sessionStorage.removeItem("abcFitnessCart");
+    alert("Thank you for your order.");
 
-  const cartItems = document.getElementById("cart-items");
-  const cartTotal = document.getElementById("cart-total");
+    sessionStorage.removeItem("abcFitnessCart");
 
-  if (cartItems) {
-    cartItems.innerHTML = "<p>Your cart is empty.</p>";
-  }
+    const cartItems = document.getElementById("cart-items");
+    const cartTotal = document.getElementById("cart-total");
 
-  if (cartTotal) {
-    cartTotal.textContent = "Total: $0.00";
-  }
+    if (cartItems) {
+        cartItems.innerHTML = "<p>Your cart is empty.</p>";
+    }
 
-  alert("Thank you for your order.");
-  
+    if (cartTotal) {
+        cartTotal.textContent = "Total: $0.00";
+    }
 }
-
 
 // Close the modal when the user clicks outside of it.
 window.addEventListener("click", function(event) {
