@@ -118,12 +118,17 @@ function processOrder() {
     const cart = getCart();
 
     if (cart.length === 0) {
+    if (sessionStorage.getItem("orderProcessed") === "true") {
+        alert("This order has already been processed.");
+    } else {
         alert("Your cart is empty.");
-        return;
     }
+    return;
+}
 
     alert("Thank you for your order.");
 
+    sessionStorage.setItem("orderProcessed", "true");
     sessionStorage.removeItem("abcFitnessCart");
 
     const cartItems = document.getElementById("cart-items");
