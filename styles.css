@@ -343,3 +343,34 @@ footer #subscribe-form button {
 .gallery-item button {
     width: fit-content;
 }
+.gallery-item {
+    width: 240px !important;
+    height: 520px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+}
+
+.gallery-item img,
+.gallery-item .product-placeholder {
+    width: 100% !important;
+    height: 180px !important;
+    min-height: 180px !important;
+    max-height: 180px !important;
+}
+
+.gallery-item h2 {
+    min-height: 60px !important;
+}
+
+.gallery-item p:not(.price) {
+    min-height: 85px !important;
+}
+
+.gallery-item .price {
+    margin-top: auto !important;
+}
+
+.gallery-item button {
+    margin-top: 10px !important;
+}
