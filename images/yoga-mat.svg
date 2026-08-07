@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="180" viewBox="0 0 300 180">
+  <rect width="300" height="180" fill="#f3eee4"/>
+  <circle cx="150" cy="80" r="45" fill="#7fa68c"/>
+  <text x="150" y="86" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#1f2f28">YOGA MAT</text>
+  <text x="150" y="145" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">ABC Fitness Studio</text>
+</svg>
