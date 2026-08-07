@@ -313,3 +313,33 @@ footer #subscribe-form button {
     font-size: 12px;
     color: #333;
 }
+.gallery-item {
+    width: 240px !important;
+    min-height: 500px !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.gallery-item img,
+.product-placeholder {
+    width: 100% !important;
+    height: 180px !important;
+    object-fit: contain !important;
+    box-sizing: border-box !important;
+}
+
+.gallery-item h2 {
+    min-height: 58px;
+}
+
+.gallery-item p:not(.price) {
+    min-height: 70px;
+}
+
+.gallery-item .price {
+    margin-top: auto;
+}
+
+.gallery-item button {
+    width: fit-content;
+}
