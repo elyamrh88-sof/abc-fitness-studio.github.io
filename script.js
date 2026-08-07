@@ -2,10 +2,16 @@
 // SUBSCRIBE FEATURE — ALL PAGES
 // ==========================================
 
-function subscribeUser() {
-  alert("Thank you for subscribing.");
-}
+const subscribeForm = document.getElementById("subscribe-form");
 
+if (subscribeForm) {
+  subscribeForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    alert("Thank you for subscribing.");
+    subscribeForm.reset();
+  });
+}
 
 // ==========================================
 // SHOPPING CART — SESSION STORAGE
