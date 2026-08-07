@@ -184,22 +184,26 @@ footer input[type="email"] {
 footer button {
   margin-top: 10px;
 }
-#subscribe-form {
-  background: transparent;
-  padding: 0;
-  margin: 0 auto;
-  width: auto;
-  max-width: none;
-  box-shadow: none;
-  border: none;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+footer #subscribe-form {
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+  max-width: 400px !important;
+  box-shadow: none !important;
+  border: none !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 15px !important;
 }
 
-#subscribe-email {
-  width: 320px;
-  max-width: 90%;
+footer #subscribe-email {
+  width: 320px !important;
+  max-width: 90% !important;
+  margin: 0 auto !important;
+}
+
+footer #subscribe-form button {
+  margin: 0 auto !important;
 }
