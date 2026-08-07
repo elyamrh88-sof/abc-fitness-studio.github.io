@@ -241,10 +241,13 @@ footer #subscribe-form button {
     padding: 15px !important;
     box-sizing: border-box !important;
     margin: 0 !important;
+    background-color: white;
+    border-radius: 8px;
 }
 
 .gallery-item img {
     width: 100% !important;
     height: 180px !important;
     object-fit: contain !important;
+    border-radius: 6px;
 }
