@@ -208,3 +208,23 @@ footer #subscribe-email {
 footer #subscribe-form button {
   margin: 0 auto !important;
 }
+.gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, 240px) !important;
+    justify-content: center !important;
+    gap: 20px !important;
+}
+
+.gallery figure {
+    width: 240px !important;
+    max-width: 240px !important;
+    box-sizing: border-box !important;
+    margin: 0 auto !important;
+    padding: 10px !important;
+}
+
+.gallery figure img {
+    width: 100% !important;
+    height: 180px !important;
+    object-fit: cover !important;
+}
