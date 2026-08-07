@@ -45,22 +45,23 @@
     </main>
 
 <footer>
-  <h2>Stay Connected</h2>
+    <h2>Stay Connected</h2>
 
-  <label for="subscribe-email">Email Address:</label>
+    <form id="subscribe-form">
+        <label for="subscribe-email">Email Address:</label>
 
-  <input
-    type="email"
-    id="subscribe-email"
-    name="subscribe-email"
-    placeholder="Enter your email"
-  >
+        <input
+            type="email"
+            id="subscribe-email"
+            name="subscribe-email"
+            placeholder="Enter your email"
+            required
+        >
 
-  <button type="button" onclick="subscribeUser()">
-    Subscribe
-  </button>
+        <button type="submit">Subscribe</button>
+    </form>
 
-  <p>&copy; 2026 ABC Fitness Studio</p>
+    <p>&copy; 2026 ABC Fitness Studio</p>
 </footer>
 
 <script src="script.js"></script>
