@@ -251,3 +251,34 @@ footer #subscribe-form button {
     object-fit: contain !important;
     border-radius: 6px;
 }
+.product-placeholder {
+    width: 100%;
+    height: 180px;
+    background-color: #f3eee4;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.product-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #7fa68c;
+    color: #1f2f28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.product-placeholder span {
+    font-size: 12px;
+    color: #333;
+}
